@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Contacto = () => {
+const Contacto = (props) => {
 
     return(
     <div className="container text-center" id="Contacto">
@@ -11,10 +11,10 @@ const Contacto = () => {
         <img id="imagenContacto" src="https://m.media-amazon.com/images/M/MV5BMTUxMzUyNjE4N15BMl5BanBnXkFtZTgwNjY4NTQ1MTI@._V1_.jpg"/>
       </div>
       <div className="col-lg-7">
-        <p><strong>Andrea F</strong></p>
-        <p> <i class="fa-solid fa-map-location-dot fa-lg mx-3"></i> Calle de la Piruleta Nº &</p>
-        <p> <i class="fa-solid fa-mobile-screen fa-lg mx-3"></i> 123456789</p>
-        <p><i class="fa-solid fa-at fa-lg mx-3"></i> SpinellyWasousky@monstruossa.es</p>
+        <p><strong>{props.nombre}</strong></p>
+        <p> <i class="fa-solid fa-map-location-dot fa-lg mx-3"></i> {props.direccion}</p>
+        <p> <i class="fa-solid fa-mobile-screen fa-lg mx-3"></i> {props.telefono}</p>
+        <p><i class="fa-solid fa-at fa-lg mx-3"></i> {props.email}</p>
       </div>
       <div className="col-lg-2 d-flex">
       <i class="fa-solid fa-user-pen fa-xl mt-3 mx-4"></i>
